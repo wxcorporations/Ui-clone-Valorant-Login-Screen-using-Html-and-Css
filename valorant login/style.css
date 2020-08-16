@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body,span,input,p,h1,button,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #808080;   
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+.valorant-form {
+    background-color: #ffffff;
+    width: 400px;
+    height: 599px;
+    padding-left: 90px;
+}
+
+.valorant-form .valorant-logo {
+    width: 60px;
+    height: 50px;
+    margin-top: 25px;
+}
+/*=============== ? ============*/
+.valorant-form .quest-btn {
+    float: right;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: #b4b4b4;
+    border-radius: 50%;
+    font-size: 10pt;
+    font-family: Roboto, sans-serif;
+    color: white;
+    margin-right: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.valorant-form .quest-btn p {
+    margin-top: 3px;
+}
+
+/*=========== input =============*/
+
+.valorant-form h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+}
+
+.valorant-input-box {
+    margin-top: 40px;
+    position: relative;
+}
+
+.valorant-input-box input {
+    width: 330px;
+    height: 50px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    transition: linear 0.1s;
+}
+
+.valorant-input-box input:hover {
+    background-color: #dedede;
+    color: #333230;
+}
+
+.valorant-input-box input:focus {
+    border: 2px solid #333230;
+}
+
+.userLogin {
+    font-family: 'Archivo Black', sans-serif;
+    color: #afa7a5;
+    font-size: 11px;
+    top: 20px;
+    left: 10px;
+}
+
+.userkey {
+    font-family: 'Archivo Black', sans-serif;
+    color: #afa7a5;
+    font-size: 11px;
+    top: 78px;
+    left: 10px;
+}
+
+.label {
+    position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease all;
+}
+
+.label1 {
+    position: absolute;
+	pointer-events: none;
+	transition: 0.2s ease all;
+}
+
+.valorant-input-box .login:focus ~ .label,.valorant-input-box .login:not(:focus):valid ~ .label {
+    left: 7px;
+    top: 5px;
+	font-size: 9px;
+}
+
+.valorant-input-box .key:focus ~ .label1,.valorant-input-box .key:not(:focus):valid ~ .label1 {
+    left: 5px;
+    top: 65px;
+	font-size: 9px;
+}
+
+
+/*=================Checkbox=================================*/
+.checkbox-login {
+    display: none;
+  }
+  
+.checkbox-login + label:before {
+    content: '';
+    width: 17px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    margin-left: -20px;
+  }
+  
+.checkbox-login:checked + label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #d13739;
+    background-position: center;
+    border: none;
+    padding: 1px;
+  }
+
+.valorant-form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #867d82;
+    margin-left: 20px;
+    margin-top: 4px;
+    position: absolute;
+    cursor: pointer;
+    transition: linear 0.2s;
+}    
+
+.valorant-form label:hover {
+    color: #c0cbd8;
+}
+
+/*==========BUTTON==================*/
+.valorant-form button {
+    background-color: #d13739;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 125px;
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    font-size: 15pt;
+    transition: linear 0.1s;
+    cursor: pointer;
+}
+
+.valorant-form button:hover {
+    background-color: #bb2a2d;
+}
+
+
+/* ==================== ACCOUNT LINKS ================*/
+.valorant-form article {
+    margin-top: 60px;
+}
+
+.valorant-form article a {
+    font-size: 8pt;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bolder;
+    color: #afb2b9;
+    text-decoration: none;
+    transition: linear 0.1s;
+}
+
+.valorant-form article a:hover{
+    color: #111111;
+}
+
+.valorant-form article p {
+    font-size: 8pt;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bolder;
+    color: #afb2b9;
+    margin-left: 250px;
+    margin-top: -14px;
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+.valorant-form article p:hover {
+    color: #85807f;
+}
+
+/* =================== image ==================== */
+
+.valorant-image {
+    width: 700px;
+    height: 599px;
+    background-image: url("image/valorantLogin.png");
+    background-repeat: no-repeat;
+    border: none;
+}
+
+/* =================== X ? _ ==================== */
+
+ article ul {
+    list-style: none;
+    margin-left: 574px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ article ul li {
+    display: inline;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    color: #808080;
+    z-index: 1;
+    transition: 0.1s linear;
+}
+
+article ul li:hover {
+    background:rgba(255,255,255, 0.3);
+   
+}
+
+/* ================== settings button =============== */
+
+article button {
+    margin-left: 640px;
+    margin-top: 505px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #7e7a7b;
+    color: #e6e6e6;
+    text-align: center;
+    font-size: 17px;
+    transition: linear 0.2s;
+}
+
+article button:hover {
+    background-color: rgb(190, 179, 182);
+}
+
+/* BY LUIZ GOMES*/
